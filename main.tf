@@ -57,7 +57,7 @@ resource "tfe_team_project_access" "admin" {    #Project에 대한 Team Access �
     delete         = false
 
     runs           = "apply"                    #[read, plan, apply] 중 선택
-    variables      = "write"                    #[none, read, write] 중 선택
+    variables      = "read"                    #[none, read, write] 중 선택
     state_versions = "write"                    #[none, read-outputs, read, write] 중 선택
     
     sentinel_mocks = "none"                     #[none, read] 중 선택 (Download Sentinel mocks)
