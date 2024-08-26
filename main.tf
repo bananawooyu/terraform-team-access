@@ -49,7 +49,7 @@ resource "tfe_team_project_access" "admin" {    #Project에 대한 Team Access �
 
   project_access {
     settings = "read"                           #[read, update, delete] 중 선택
-    teams    = "none"                           #[none, read, manage] 중 선택
+    teams    = "read"                           #[none, read, manage] 중 선택
   }
   workspace_access {                            #UI상 순서로 작성
     create         = true                       #Manage workspace
